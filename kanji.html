@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Fiche de kanji – lectures, sens, exemples</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f5f5f7;
+      margin: 0;
+      padding: 20px;
+      color: #222;
+    }
+
+    h1, h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      letter-spacing: 0.05em;
+    }
+
+    .intro {
+      max-width: 900px;
+      margin: 0 auto 20px;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .kanji-grid {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+
+    .kanji-card {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 14px 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .kanji-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 4px;
+    }
+
+    .kanji-char {
+      font-size: 2.4rem;
+      font-weight: 600;
+    }
+
+    .kanji-level {
+      font-size: 0.8rem;
+      color: #666;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .label {
+      font-weight: 600;
+      font-size: 0.85rem;
+      color: #333;
+    }
+
+    .reading {
+      font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+      font-size: 0.95rem;
+    }
+
+    .meaning {
+      font-size: 0.9rem;
+    }
+
+    .examples {
+      margin-top: 4px;
+      font-size: 0.9rem;
+    }
+
+    .examples ul {
+      margin: 4px 0 0;
+      padding-left: 18px;
+    }
+
+    .examples li {
+      margin-bottom: 2px;
+    }
+
+    .jp {
+      font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+      font-weight: 500;
+    }
+
+    .furigana {
+      font-size: 0.75rem;
+      color: #666;
+      margin-left: 4px;
+    }
+
+    .footer {
+      max-width: 900px;
+      margin: 24px auto 0;
+      font-size: 0.8rem;
+      color: #666;
+      text-align: center;
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+      }
+      .kanji-card {
+        box-shadow: none;
+        border: 1px solid #ddd;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Kanji – Lectures, sens et exemples</h1>
+  <h2>Fiche de révision</h2>
+
+  <div class="intro">
+    Cette page rassemble quelques kanji fréquents avec :
+    <br>– leurs lectures <strong>on</strong> (音読み) et <strong>kun</strong> (訓読み),
+    <br>– une signification primaire et secondaire,
+    <br>– des exemples de mots courants.
+    <br><br>
+    Tu peux t’en servir comme base et ajouter d’autres kanji en copiant les cartes existantes.
+  </div>
+
+  <div class="kanji-grid">
+
+    <!-- 日 -->
+    <div class="kanji-card">
+      <div class="kanji-header">
+        <div class="kanji-char">日</div>
+        <div class="kanji-level">N5 – Base</div>
+      </div>
+      <div><span class="label">On :</span> <span class="reading">ニチ (nichi), ジツ (jitsu)</span></div>
+      <div><span class="label">Kun :</span> <span class="reading">ひ (hi), か (ka)</span></div>
+      <div class="meaning">
+        <span class="label">Sens primaire :</span> jour, soleil<br>
+        <span class="label">Sens secondaire :</span> date, journée
+      </div>
+      <div class="examples">
+        <span class="label">Exemples :</span>
+        <ul>
+          <li><span class="jp">日本</span><span class="furigana">にほん</span> – Japon</li>
+          <li><span class="jp">休日</span><span class="furigana">きゅうじつ</span> – jour de congé</li>
+          <li><span class="jp">日</span><span class="furigana">ひ</span> – jour, soleil</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 月 -->
+    <div class="kanji-card">
+      <div class="kanji-header">
+        <div class="kanji-char">月</div>
+        <div class="kanji-level">N5 – Base</div>
+      </div>
+      <div><span class="label">On :</span> <span class="reading">ゲツ (getsu), ガツ (gatsu)</span></div>
+      <div><span class="label">Kun :</span> <span class="reading">つき (tsuki)</span></div>
+      <div class="meaning">
+        <span class="label">Sens primaire :</span> mois<br>
+        <span class="label">Sens secondaire :</span> lune
+      </div>
+      <div class="examples">
+        <span class="label">Exemples :</span>
+        <ul>
+          <li><span class="jp">月曜日</span><span class="furigana">げつようび</span> – lundi</li>
+          <li><span class="jp">一月</span><span class="furigana">いちがつ</span> – janvier</li>
+          <li><span class="jp">月</span><span class="furigana">つき</span> – lune</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 人 -->
+    <div class="kanji-card">
+      <div class="kanji-header">
+        <div class="kanji-char">人</div>
+        <div class="kanji-level">N5 – Base</div>
+      </div>
+      <div><span class="label">On :</span> <span class="reading">ジン (jin), ニン (nin)</span></div>
+      <div><span class="label">Kun :</span> <span class="reading">ひと (hito)</span></div>
+      <div class="meaning">
+        <span class="label">Sens primaire :</span> personne<br>
+        <span class="label">Sens secondaire :</span> humain, individu
+      </div>
+      <div class="examples">
+        <span class="label">Exemples :</span>
+        <ul>
+          <li><span class="jp">日本人</span><span class="furigana">にほんじん</span> – Japonais (personne)</li>
+          <li><span class="jp">三人</span><span class="furigana">さんにん</span> – trois personnes</li>
+          <li><span class="jp">人</span><span class="furigana">ひと</span> – personne</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 大 -->
+    <div class="kanji-card">
+      <div class="kanji-header">
+        <div class="kanji-char">大</div>
+        <div class="kanji-level">N5 – Base</div>
+      </div>
+      <div><span class="label">On :</span> <span class="reading">ダイ (dai), タイ (tai)</span></div>
+      <div><span class="label">Kun :</span> <span class="reading">おお-きい (ōkii)</span></div>
+      <div class="meaning">
+        <span class="label">Sens primaire :</span> grand<br>
+        <span class="label">Sens secondaire :</span> important, majeur
+      </div>
+      <div class="examples">
+        <span class="label">Exemples :</span>
+        <ul>
+          <li><span class="jp">大学</span><span class="furigana">だいがく</span> – université</li>
+          <li><span class="jp">大人</span><span class="furigana">おとな</span> – adulte</li>
+          <li><span class="jp">大きい</span><span class="furigana">おおきい</span> – grand</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 小 -->
+    <div class="kanji-card">
+      <div class="kanji-header">
+        <div class="kanji-char">小</div>
+        <div class="kanji-level">N5 – Base</div>
+      </div>
+      <div><span class="label">On :</span> <span class="reading">ショウ (shō)</span></div>
+      <div><span class="label">Kun :</span> <span class="reading">ちい-さい (chiisai), こ- (ko)</span></div>
+      <div class="meaning">
+        <span class="label">Sens primaire :</span> petit<br>
+        <span class="label">Sens secondaire :</span> peu, mineur
+      </div>
+      <div class="examples">
+        <span class="label">Exemples :</span>
+        <ul>
+          <li><span class="jp">小学校</span><span class="furigana">しょうがっこう</span> – école primaire</li>
+          <li><span class="jp">小さい</span><span class="furigana">ちいさい</span> – petit</li>
+          <li><span class="jp">小川</span><span class="furigana">おがわ</span> – ruisseau (litt. « petite rivière »)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 学 -->
+    <div class="kanji-card">
+      <div class="kanji-header">
+        <div class="kanji-char">学</div>
+        <div class="kanji-level">N5 – Base</div>
+      </div>
+      <div><span class="label">On :</span> <span class="reading">ガク (gaku)</span></div>
+      <div><span class="label">Kun :</span> <span class="reading">まな-ぶ (manabu)</span></div>
+      <div class="meaning">
+        <span class="label">Sens primaire :</span> étude, apprentissage<br>
+        <span class="label">Sens secondaire :</span> science, savoir
+      </div>
+      <div class="examples">
+        <span class="label">Exemples :</span>
+        <ul>
+          <li><span class="jp">学生</span><span class="furigana">がくせい</span> – étudiant</li>
+          <li><span class="jp">大学</span><span class="furigana">だいがく</span> – université</li>
+          <li><span class="jp">学ぶ</span><span class="furigana">まなぶ</span> – étudier, apprendre</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 校 -->
+    <div class="kanji-card">
+      <div class="kanji-header">
+        <div class="kanji-char">校</div>
+        <div class="kanji-level">N5 – Base</div>
+      </div>
+      <div><span class="label">On :</span> <span class="reading">コウ (kō)</span></div>
+      <div><span class="label">Kun :</span> <span class="reading">— (pas de lecture kun courante)</span></div>
+      <div class="meaning">
+        <span class="label">Sens primaire :</span> école<br>
+        <span class="label">Sens secondaire :</span> bâtiment scolaire
+      </div>
+      <div class="examples">
+        <span class="label">Exemples :</span>
+        <ul>
+          <li><span class="jp">学校</span><span class="furigana">がっこう</span> – école</li>
+          <li><span class="jp">高校</span><span class="furigana">こうこう</span> – lycée</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 生 -->
+    <div class="kanji-card">
+      <div class="kanji-header">
+        <div class="kanji-char">生</div>
+        <div class="kanji-level">N5 – Base</div>
+      </div>
+      <div><span class="label">On :</span> <span class="reading">セイ (sei), ショウ (shō)</span></div>
+      <div><span class="label">Kun :</span> <span class="reading">い-きる (ikiru), う-まれる (umareru), なま (nama)</span></div>
+      <div class="meaning">
+        <span class="label">Sens primaire :</span> vie, naissance<br>
+        <span class="label">Sens secondaire :</span> cru, vivant
+      </div>
+      <div class="examples">
+        <span class="label">Exemples :</span>
+        <ul>
+          <li><span class="jp">学生</span><span class="furigana">がくせい</span> – étudiant</li>
+          <li><span class="jp">生活</span><span class="furigana">せいかつ</span> – vie quotidienne</li>
+          <li><span class="jp">生まれる</span><span class="furigana">うまれる</span> – naître</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 先 -->
+    <div class="kanji-card">
+      <div class="kanji-header">
+        <div class="kanji-char">先</div>
+        <div class="kanji-level">N5 – Base</div>
+      </div>
+      <div><span class="label">On :</span> <span class="reading">セン (sen)</span></div>
+      <div><span class="label">Kun :</span> <span class="reading">さき (saki)</span></div>
+      <div class="meaning">
+        <span class="label">Sens primaire :</span> avant, précédent<br>
+        <span class="label">Sens secondaire :</span> futur proche, pointe
+      </div>
+      <div class="examples">
+        <span class="label">Exemples :</span>
+        <ul>
+          <li><span class="jp">先生</span><span class="furigana">せんせい</span> – professeur</li>
+          <li><span class="jp">先週</span><span class="furigana">せんしゅう</span> – la semaine dernière</li>
+          <li><span class="jp">先</span><span class="furigana">さき</span> – devant, avant, pointe</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 時 -->
+    <div class="kanji-card">
+      <div class="kanji-header">
+        <div class="kanji-char">時</div>
+        <div class="kanji-level">N5 – Base</div>
+      </div>
+      <div><span class="label">On :</span> <span class="reading">ジ (ji)</span></div>
+      <div><span class="label">Kun :</span> <span class="reading">とき (toki)</span></div>
+      <div class="meaning">
+        <span class="label">Sens primaire :</span> temps, heure<br>
+        <span class="label">Sens secondaire :</span> moment
+      </div>
+      <div class="examples">
+        <span class="label">Exemples :</span>
+        <ul>
+          <li><span class="jp">時間</span><span class="furigana">じかん</span> – durée, temps</li>
+          <li><span class="jp">一時</span><span class="furigana">いちじ</span> – une heure</li>
+          <li><span class="jp">時</span><span class="furigana">とき</span> – moment, quand</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 食 -->
+    <div class="kanji-card">
+      <div class="kanji-header">
+        <div class="kanji-char">食</div>
+        <div class="kanji-level">N5 – Base</div>
+      </div>
+      <div><span class="label">On :</span> <span class="reading">ショク (shoku)</span></div>
+      <div><span class="label">Kun :</span> <span class="reading">た-べる (taberu), く-う (kuu)</span></div>
+      <div class="meaning">
+        <span class="label">Sens primaire :</span> manger<br>
+        <span class="label">Sens secondaire :</span> nourriture, repas
+      </div>
+      <div class="examples">
+        <span class="label">Exemples :</span>
+        <ul>
+          <li><span class="jp">食事</span><span class="furigana">しょくじ</span> – repas</li>
+          <li><span class="jp">朝食</span><span class="furigana">ちょうしょく</span> – petit-déjeuner</li>
+          <li><span class="jp">食べる</span><span class="furigana">たべる</span> – manger</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 見 -->
+    <div class="kanji-card">
+      <div class="kanji-header">
+        <div class="kanji-char">見</div>
+        <div class="kanji-level">N5 – Base</div>
+      </div>
+      <div><span class="label">On :</span> <span class="reading">ケン (ken)</span></div>
+      <div><span class="label">Kun :</span> <span class="reading">み-る (miru), み-える (mieru)</span></div>
+      <div class="meaning">
+        <span class="label">Sens primaire :</span> voir, regarder<br>
+        <span class="label">Sens secondaire :</span> opinion, point de vue
+      </div>
+      <div class="examples">
+        <span class="label">Exemples :</span>
+        <ul>
+          <li><span class="jp">見学</span><span class="furigana">けんがく</span> – visite d’étude</li>
+          <li><span class="jp">意見</span><span class="furigana">いけん</span> – opinion</li>
+          <li><span class="jp">見る</span><span class="furigana">みる</span> – voir, regarder</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 行 -->
+    <div class="kanji-card">
+      <div class="kanji-header">
+        <div class="kanji-char">行</div>
+        <div class="kanji-level">N5 – Base</div>
+      </div>
+      <div><span class="label">On :</span> <span class="reading">コウ (kō), ギョウ (gyō), アン (an)</span></div>
+      <div><span class="label">Kun :</span> <span class="reading">い-く (iku), おこな-う (okonau)</span></div>
+      <div class="meaning">
+        <span class="label">Sens primaire :</span> aller<br>
+        <span class="label">Sens secondaire :</span> ligne, effectuer
+      </div>
+      <div class="examples">
+        <span class="label">Exemples :</span>
+        <ul>
+          <li><span class="jp">銀行</span><span class="furigana">ぎんこう</span> – banque</li>
+          <li><span class="jp">行事</span><span class="furigana">ぎょうじ</span> – événement</li>
+          <li><span class="jp">行く</span><span class="furigana">いく</span> – aller</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 来 -->
+    <div class="kanji-card">
+      <div class="kanji-header">
+        <div class="kanji-char">来</div>
+        <div class="kanji-level">N5 – Base</div>
+      </div>
+      <div><span class="label">On :</span> <span class="reading">ライ (rai)</span></div>
+      <div><span class="label">Kun :</span> <span class="reading">く-る (kuru)</span></div>
+      <div class="meaning">
+        <span class="label">Sens primaire :</span> venir<br>
+        <span class="label">Sens secondaire :</span> prochain, futur
+      </div>
+      <div class="examples">
+        <span class="label">Exemples :</span>
+        <ul>
+          <li><span class="jp">来週</span><span class="furigana">らいしゅう</span> – la semaine prochaine</li>
+          <li><span class="jp">来年</span><span class="furigana">らいねん</span> – l’année prochaine</li>
+          <li><span class="jp">来る</span><span class="furigana">くる</span> – venir</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 手 -->
+    <div class="kanji-card">
+      <div class="kanji-header">
+        <div class="kanji-char">手</div>
+        <div class="kanji-level">N5 – Base</div>
+      </div>
+      <div><span class="label">On :</span> <span class="reading">シュ (shu)</span></div>
+      <div><span class="label">Kun :</span> <span class="reading">て (te), た- (ta)</span></div>
+      <div class="meaning">
+        <span class="label">Sens primaire :</span> main<br>
+        <span class="label">Sens secondaire :</span> méthode, personne (dans certains composés)
+      </div>
+      <div class="examples">
+        <span class="label">Exemples :</span>
+        <ul>
+          <li><span class="jp">手紙</span><span class="furigana">てがみ</span> – lettre</li>
+          <li><span class="jp">上手</span><span class="furigana">じょうず</span> – doué, habile</li>
+          <li><span class="jp">手</span><span class="furigana">て</span> – main</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 水 -->
+    <div class="kanji-card">
+      <div class="kanji-header">
+        <div class="kanji-char">水</div>
+        <div class="kanji-level">N5 – Base</div>
+      </div>
+      <div><span class="label">On :</span> <span class="reading">スイ (sui)</span></div>
+      <div><span class="label">Kun :</span> <span class="reading">みず (mizu)</span></div>
+      <div class="meaning">
+        <span class="label">Sens primaire :</span> eau<br>
+        <span class="label">Sens secondaire :</span> liquide
+      </div>
+      <div class="examples">
+        <span class="label">Exemples :</span>
+        <ul>
+          <li><span class="jp">水曜日</span><span class="furigana">すいようび</span> – mercredi</li>
+          <li><span class="jp">水道</span><span class="furigana">すいどう</span> – eau courante, canalisation</li>
+          <li><span class="jp">水</span><span class="furigana">みず</span> – eau</li>
+        </ul>
+      </div>
+    </div>
+    <div class="kanji-card">
+  <div class="kanji-header">
+    <div class="kanji-char">木</div>
+    <div class="kanji-level">N5 – Base</div>
+  </div>
+  <div><span class="label">On :</span> モク (moku), ボク (boku)</div>
+  <div><span class="label">Kun :</span> き (ki)</div>
+  <div class="meaning">
+    <span class="label">Sens primaire :</span> arbre<br>
+    <span class="label">Sens secondaire :</span> bois
+  </div>
+  <div class="examples">
+    <span class="label">Exemples :</span>
+    <ul>
+      <li>木曜日（もくようび）– jeudi</li>
+      <li>木（き）– arbre</li>
+      <li>木材（もくざい）– bois (matériau)</li>
+    </ul>
+  </div>
+</div>
+<div class="kanji-card">
+  <div class="kanji-header">
+    <div class="kanji-char">火</div>
+    <div class="kanji-level">N5 – Base</div>
+  </div>
+  <div><span class="label">On :</span> カ (ka)</div>
+  <div><span class="label">Kun :</span> ひ (hi)</div>
+  <div class="meaning">
+    <span class="label">Sens primaire :</span> feu<br>
+    <span class="label">Sens secondaire :</span> flamme
+  </div>
+  <div class="examples">
+    <span class="label">Exemples :</span>
+    <ul>
+      <li>火曜日（かようび）– mardi</li>
+      <li>火（ひ）– feu</li>
+      <li>火山（かざん）– volcan</li>
+    </ul>
+  </div>
+</div>
+<div class="kanji-card">
+  <div class="kanji-header">
+    <div class="kanji-char">金</div>
+    <div class="kanji-level">N5 – Base</div>
+  </div>
+  <div><span class="label">On :</span> キン (kin), コン (kon)</div>
+  <div><span class="label">Kun :</span> かね (kane)</div>
+  <div class="meaning">
+    <span class="label">Sens primaire :</span> or<br>
+    <span class="label">Sens secondaire :</span> argent (argent réel), métal
+  </div>
+  <div class="examples">
+    <span class="label">Exemples :</span>
+    <ul>
+      <li>金曜日（きんようび）– vendredi</li>
+      <li>お金（おかね）– argent</li>
+      <li>金属（きんぞく）– métal</li>
+    </ul>
+  </div>
+</div>
+<div class="kanji-card">
+  <div class="kanji-header">
+    <div class="kanji-char">土</div>
+    <div class="kanji-level">N5 – Base</div>
+  </div>
+  <div><span class="label">On :</span> ド (do), ト (to)</div>
+  <div><span class="label">Kun :</span> つち (tsuchi)</div>
+  <div class="meaning">
+    <span class="label">Sens primaire :</span> terre<br>
+    <span class="label">Sens secondaire :</span> sol
+  </div>
+  <div class="examples">
+    <span class="label">Exemples :</span>
+    <ul>
+      <li>土曜日（どようび）– samedi</li>
+      <li>土（つち）– terre</li>
+      <li>土地（とち）– terrain</li>
+    </ul>
+  </div>
+</div>
+<div class="kanji-card">
+  <div class="kanji-header">
+    <div class="kanji-char">川</div>
+    <div class="kanji-level">N5 – Base</div>
+  </div>
+  <div><span class="label">On :</span> セン (sen)</div>
+  <div><span class="label">Kun :</span> かわ (kawa)</div>
+  <div class="meaning">
+    <span class="label">Sens primaire :</span> rivière<br>
+    <span class="label">Sens secondaire :</span> cours d’eau
+  </div>
+  <div class="examples">
+    <span class="label">Exemples :</span>
+    <ul>
+      <li>川（かわ）– rivière</li>
+      <li>川辺（かわべ）– bord de rivière</li>
+      <li>河川（かせん）– rivières (terme général)</li>
+    </ul>
+  </div>
+</div>
+<div class="kanji-card">
+  <div class="kanji-header">
+    <div class="kanji-char">山</div>
+    <div class="kanji-level">N5 – Base</div>
+  </div>
+  <div><span class="label">On :</span> サン (san)</div>
+  <div><span class="label">Kun :</span> やま (yama)</div>
+  <div class="meaning">
+    <span class="label">Sens primaire :</span> montagne<br>
+    <span class="label">Sens secondaire :</span> colline
+  </div>
+  <div class="examples">
+    <span class="label">Exemples :</span>
+    <ul>
+      <li>山（やま）– montagne</li>
+      <li>富士山（ふじさん）– mont Fuji</li>
+      <li>山道（やまみち）– chemin de montagne</li>
+    </ul>
+  </div>
+</div>
+<div class="kanji-card">
+  <div class="kanji-header">
+    <div class="kanji-char">空</div>
+    <div class="kanji-level">N5 – Base</div>
+  </div>
+  <div><span class="label">On :</span> クウ (kū)</div>
+  <div><span class="label">Kun :</span> そら (sora), あ-く (aku), から (kara)</div>
+  <div class="meaning">
+    <span class="label">Sens primaire :</span> ciel<br>
+    <span class="label">Sens secondaire :</span> vide
+  </div>
+  <div class="examples">
+    <span class="label">Exemples :</span>
+    <ul>
+      <li>空（そら）– ciel</li>
+      <li>空気（くうき）– air</li>
+      <li>空く（あく）– se libérer, être vide</li>
+    </ul>
+  </div>
+</div>
+<div class="kanji-card">
+  <div class="kanji-header">
+    <div class="kanji-char">雨</div>
+    <div class="kanji-level">N5 – Base</div>
+  </div>
+  <div><span class="label">On :</span> ウ (u)</div>
+  <div><span class="label">Kun :</span> あめ (ame)</div>
+  <div class="meaning">
+    <span class="label">Sens primaire :</span> pluie<br>
+    <span class="label">Sens secondaire :</span> précipitation
+  </div>
+  <div class="examples">
+    <span class="label">Exemples :</span>
+    <ul>
+      <li>雨（あめ）– pluie</li>
+      <li>大雨（おおあめ）– forte pluie</li>
+      <li>雨天（うてん）– temps pluvieux</li>
+    </ul>
+  </div>
+</div>
+<div class="kanji-card">
+  <div class="kanji-header">
+    <div class="kanji-char">車</div>
+    <div class="kanji-level">N5 – Base</div>
+  </div>
+  <div><span class="label">On :</span> シャ (sha)</div>
+  <div><span class="label">Kun :</span> くるま (kuruma)</div>
+  <div class="meaning">
+    <span class="label">Sens primaire :</span> véhicule<br>
+    <span class="label">Sens secondaire :</span> roue
+  </div>
+  <div class="examples">
+    <span class="label">Exemples :</span>
+    <ul>
+      <li>車（くるま）– voiture</li>
+      <li>電車（でんしゃ）– train</li>
+      <li>自動車（じどうしゃ）– automobile</li>
+    </ul>
+  </div>
+</div>
+<div class="kanji-card">
+  <div class="kanji-header">
+    <div class="kanji-char">名</div>
+    <div class="kanji-level">N5 – Base</div>
+  </div>
+  <div><span class="label">On :</span> メイ (mei), ミョウ (myō)</div>
+  <div><span class="label">Kun :</span> な (na)</div>
+  <div class="meaning">
+    <span class="label">Sens primaire :</span> nom<br>
+    <span class="label">Sens secondaire :</span> réputation
+  </div>
+  <div class="examples">
+    <span class="label">Exemples :</span>
+    <ul>
+      <li>名前（なまえ）– nom</li>
+      <li>有名（ゆうめい）– célèbre</li>
+      <li>名人（めいじん）– maître, expert</li>
+    </ul>
+  </div>
+</div>
+<div class="kanji-card">
+  <div class="kanji-header">
+    <div class="kanji-char">語</div>
+    <div class="kanji-level">N5 – Base</div>
+  </div>
+  <div><span class="label">On :</span> ゴ (go)</div>
+  <div><span class="label">Kun :</span> かた-る (kataru)</div>
+  <div class="meaning">
+    <span class="label">Sens primaire :</span> langue<br>
+    <span class="label">Sens secondaire :</span> raconter, parole
+  </div>
+  <div class="examples">
+    <span class="label">Exemples :</span>
+    <ul>
+      <li>日本語（にほんご）– japonais (langue)</li>
+      <li>英語（えいご）– anglais</li>
+      <li>語る（かたる）– raconter</li>
+    </ul>
+  </div>
+</div>
+<div class="kanji-card">
+  <div class="kanji-header">
+    <div class="kanji-char">書</div>
+    <div class="kanji-level">N5 – Base</div>
+  </div>
+  <div><span class="label">On :</span> ショ (sho)</div>
+  <div><span class="label">Kun :</span> か-く (kaku)</div>
+  <div class="meaning">
+    <span class="label">Sens primaire :</span> écrire<br>
+    <span class="label">Sens secondaire :</span> document, calligraphie
+  </div>
+  <div class="examples">
+    <span class="label">Exemples :</span>
+    <ul>
+      <li>書く（かく）– écrire</li>
+      <li>図書館（としょかん）– bibliothèque</li>
+      <li>書類（しょるい）– documents</li>
+    </ul>
+  </div>
+</div>
+<!-- 木 -->
+<div class="kanji-card">
+  <div class="kanji-header">
+    <div class="kanji-char">木</div>
+    <div class="kanji-level">N5 – Base</div>
+  </div>
+  <div><span class="label">On :</span> モク, ボク</div>
+  <div><span class="label">Kun :</span> き</div>
+  <div class="meaning">
+    <span class="label">Sens primaire :</span> arbre<br>
+    <span class="label">Sens secondaire :</span> bois
+  </div>
+  <div class="examples">
+    <span class="label">Exemples :</span>
+    <ul>
+      <li>木曜日（もくようび）– jeudi</li>
+      <li>木（き）– arbre</li>
+      <li>木材（もくざい）– bois (matériau)</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 火 -->
+<div class="kanji-card">
+  <div class="kanji-header">
+    <div class="kanji-char">火</div>
+    <div class="kanji-level">N5 – Base</div>
+  </div>
+  <div><span class="label">On :</span> カ</div>
+  <div><span class="label">Kun :</span> ひ</div>
+  <div class="meaning">
+    <span class="label">Sens primaire :</span> feu<br>
+    <span class="label">Sens secondaire :</span> flamme
+  </div>
+  <div class="examples">
+    <span class="label">Exemples :</span>
+    <ul>
+      <li>火曜日（かようび）– mardi</li>
+      <li>火（ひ）– feu</li>
+      <li>火山（かざん）– volcan</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 金 -->
+<div class="kanji-card">
+  <div class="kanji-header">
+    <div class="kanji-char">金</div>
+    <div class="kanji-level">N5 – Base</div>
+  </div>
+  <div><span class="label">On :</span> キン, コン</div>
+  <div><span class="label">Kun :</span> かね</div>
+  <div class="meaning">
+    <span class="label">Sens primaire :</span> or<br>
+    <span class="label">Sens secondaire :</span> argent, métal
+  </div>
+  <div class="examples">
+    <span class="label">Exemples :</span>
+    <ul>
+      <li>金曜日（きんようび）– vendredi</li>
+      <li>お金（おかね）– argent</li>
+      <li>金属（きんぞく）– métal</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 土 -->
+<div class="kanji-card">
+  <div class="kanji-header">
+    <div class="kanji-char">土</div>
+    <div class="kanji-level">N5 – Base</div>
+  </div>
+  <div><span class="label">On :</span> ド, ト</div>
+  <div><span class="label">Kun :</span> つち</div>
+  <div class="meaning">
+    <span class="label">Sens primaire :</span> terre<br>
+    <span class="label">Sens secondaire :</span> sol
+  </div>
+  <div class="examples">
+    <span class="label">Exemples :</span>
+    <ul>
+      <li>土曜日（どようび）– samedi</li>
+      <li>土（つち）– terre</li>
+      <li>土地（とち）– terrain</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 川 -->
+<div class="kanji-card">
+  <div class="kanji-header">
+    <div class="kanji-char">川</div>
+    <div class="kanji-level">N5 – Base</div>
+  </div>
+  <div><span class="label">On :</span> セン</div>
+  <div><span class="label">Kun :</span> かわ</div>
+  <div class="meaning">
+    <span class="label">Sens primaire :</span> rivière<br>
+    <span class="label">Sens secondaire :</span> cours d’eau
+  </div>
+  <div class="examples">
+    <span class="label">Exemples :</span>
+    <ul>
+      <li>川（かわ）– rivière</li>
+      <li>川辺（かわべ）– bord de rivière</li>
+      <li>河川（かせん）– rivières (terme général)</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 山 -->
+<div class="kanji-card">
+  <div class="kanji-header">
+    <div class="kanji-char">山</div>
+    <div class="kanji-level">N5 – Base</div>
+  </div>
+  <div><span class="label">On :</span> サン</div>
+  <div><span class="label">Kun :</span> やま</div>
+  <div class="meaning">
+    <span class="label">Sens primaire :</span> montagne<br>
+    <span class="label">Sens secondaire :</span> colline
+  </div>
+  <div class="examples">
+    <span class="label">Exemples :</span>
+    <ul>
+      <li>山（やま）– montagne</li>
+      <li>富士山（ふじさん）– mont Fuji</li>
+      <li>山道（やまみち）– chemin de montagne</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 空 -->
+<div class="kanji-card">
+  <div class="kanji-header">
+    <div class="kanji-char">空</div>
+    <div class="kanji-level">N5 – Base</div>
+  </div>
+  <div><span class="label">On :</span> クウ</div>
+  <div><span class="label">Kun :</span> そら, あく, から</div>
+  <div class="meaning">
+    <span class="label">Sens primaire :</span> ciel<br>
+    <span class="label">Sens secondaire :</span> vide
+  </div>
+  <div class="examples">
+    <span class="label">Exemples :</span>
+    <ul>
+      <li>空（そら）– ciel</li>
+      <li>空気（くうき）– air</li>
+      <li>空く（あく）– se libérer, être vide</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 雨 -->
+<div class="kanji-card">
+  <div class="kanji-header">
+    <div class="kanji-char">雨</div>
+    <div class="kanji-level">N5 – Base</div>
+  </div>
+  <div><span class="label">On :</span> ウ</div>
+  <div><span class="label">Kun :</span> あめ</div>
+  <div class="meaning">
+    <span class="label">Sens primaire :</span> pluie<br>
+    <span class="label">Sens secondaire :</span> précipitation
+  </div>
+  <div class="examples">
+    <span class="label">Exemples :</span>
+    <ul>
+      <li>雨（あめ）– pluie</li>
+      <li>大雨（おおあめ）– forte pluie</li>
+      <li>雨天（うてん）– temps pluvieux</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 車 -->
+<div class="kanji-card">
+  <div class="kanji-header">
+    <div class="kanji-char">車</div>
+    <div class="kanji-level">N5 – Base</div>
+  </div>
+  <div><span class="label">On :</span> シャ</div>
+  <div><span class="label">Kun :</span> くるま</div>
+  <div class="meaning">
+    <span class="label">Sens primaire :</span> véhicule<br>
+    <span class="label">Sens secondaire :</span> roue
+  </div>
+  <div class="examples">
+    <span class="label">Exemples :</span>
+    <ul>
+      <li>車（くるま）– voiture</li>
+      <li>電車（でんしゃ）– train</li>
+      <li>自動車（じどうしゃ）– automobile</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 名 -->
+<div class="kanji-card">
+  <div class="kanji-header">
+    <div class="kanji-char">名</div>
+    <div class="kanji-level">N5 – Base</div>
+  </div>
+  <div><span class="label">On :</span> メイ, ミョウ</div>
+  <div><span class="label">Kun :</span> な</div>
+  <div class="meaning">
+    <span class="label">Sens primaire :</span> nom<br>
+    <span class="label">Sens secondaire :</span> réputation
+  </div>
+  <div class="examples">
+    <span class="label">Exemples :</span>
+    <ul>
+      <li>名前（なまえ）– nom</li>
+      <li>有名（ゆうめい）– célèbre</li>
+      <li>名人（めいじん）– maître, expert</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 語 -->
+<div class="kanji-card">
+  <div class="kanji-header">
+    <div class="kanji-char">語</div>
+    <div class="kanji-level">N5 – Base</div>
+  </div>
+  <div><span class="label">On :</span> ゴ</div>
+  <div><span class="label">Kun :</span> かたる</div>
+  <div class="meaning">
+    <span class="label">Sens primaire :</span> langue<br>
+    <span class="label">Sens secondaire :</span> raconter, parole
+  </div>
+  <div class="examples">
+    <span class="label">Exemples :</span>
+    <ul>
+      <li>日本語（にほんご）– japonais</li>
+      <li>英語（えいご）– anglais</li>
+      <li>語る（かたる）– raconter</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 書 -->
+<div class="kanji-card">
+  <div class="kanji-header">
+    <div class="kanji-char">書</div>
+    <div class="kanji-level">N5 – Base</div>
+  </div>
+  <div><span class="label">On :</span> ショ</div>
+  <div><span class="label">Kun :</span> かく</div>
+  <div class="meaning">
+    <span class="label">Sens primaire :</span> écrire<br>
+    <span class="label">Sens secondaire :</span> document, calligraphie
+  </div>
+  <div class="examples">
+    <span class="label">Exemples :</span>
+    <ul>
+      <li>書く（かく）– écrire</li>
+      <li>図書館（としょかん）– bibliothèque</li>
+      <li>書類（しょるい）– documents</li>
+    </ul>
+  </div>
+</div>
+<!-- 年 -->
+<div class="kanji-card">
+  <div class="kanji-header"><div class="kanji-char">年</div><div class="kanji-level">N5</div></div>
+  <div><span class="label">On :</span> ネン</div>
+  <div><span class="label">Kun :</span> とし</div>
+  <div class="meaning"><span class="label">Sens primaire :</span> année<br><span class="label">Sens secondaire :</span> âge</div>
+  <div class="examples"><ul><li>今年（ことし）– cette année</li><li>去年（きょねん）– l’an dernier</li><li>年（とし）– année</li></ul></div>
+</div>
+
+<!-- 高 -->
+<div class="kanji-card">
+  <div class="kanji-header"><div class="kanji-char">高</div><div class="kanji-level">N5</div></div>
+  <div><span class="label">On :</span> コウ</div>
+  <div><span class="label">Kun :</span> たかい</div>
+  <div class="meaning"><span class="label">Sens primaire :</span> haut<br><span class="label">Sens secondaire :</span> cher</div>
+  <div class="examples"><ul><li>高校（こうこう）– lycée</li><li>高い（たかい）– haut, cher</li><li>最高（さいこう）– le meilleur</li></ul></div>
+</div>
+
+<!-- 安 -->
+<div class="kanji-card">
+  <div class="kanji-header"><div class="kanji-char">安</div><div class="kanji-level">N5</div></div>
+  <div><span class="label">On :</span> アン</div>
+  <div><span class="label">Kun :</span> やすい</div>
+  <div class="meaning"><span class="label">Sens primaire :</span> bon marché<br><span class="label">Sens secondaire :</span> sûr</div>
+  <div class="examples"><ul><li>安全（あんぜん）– sécurité</li><li>安い（やすい）– pas cher</li><li>安心（あんしん）– rassuré</li></ul></div>
+</div>
+
+<!-- 新 -->
+<div class="kanji-card">
+  <div class="kanji-header"><div class="kanji-char">新</div><div class="kanji-level">N4</div></div>
+  <div><span class="label">On :</span> シン</div>
+  <div><span class="label">Kun :</span> あたらしい</div>
+  <div class="meaning"><span class="label">Sens primaire :</span> nouveau<br><span class="label">Sens secondaire :</span> frais</div>
+  <div class="examples"><ul><li>新聞（しんぶん）– journal</li><li>新しい（あたらしい）– nouveau</li><li>新人（しんじん）– nouveau membre</li></ul></div>
+</div>
+
+<!-- 古 -->
+<div class="kanji-card">
+  <div class="kanji-header"><div class="kanji-char">古</div><div class="kanji-level">N5</div></div>
+  <div><span class="label">On :</span> コ</div>
+  <div><span class="label">Kun :</span> ふるい</div>
+  <div class="meaning"><span class="label">Sens primaire :</span> vieux<br><span class="label">Sens secondaire :</span> ancien</div>
+  <div class="examples"><ul><li>中古（ちゅうこ）– occasion</li><li>古い（ふるい）– vieux</li><li>古代（こだい）– antiquité</li></ul></div>
+</div>
+
+<!-- 長 -->
+<div class="kanji-card">
+  <div class="kanji-header"><div class="kanji-char">長</div><div class="kanji-level">N5</div></div>
+  <div><span class="label">On :</span> チョウ</div>
+  <div><span class="label">Kun :</span> ながい</div>
+  <div class="meaning"><span class="label">Sens primaire :</span> long<br><span class="label">Sens secondaire :</span> chef</div>
+  <div class="examples"><ul><li>長い（ながい）– long</li><li>社長（しゃちょう）– PDG</li><li>部長（ぶちょう）– chef de service</li></ul></div>
+</div>
+
+<!-- 短 -->
+<div class="kanji-card">
+  <div class="kanji-header"><div class="kanji-char">短</div><div class="kanji-level">N4</div></div>
+  <div><span class="label">On :</span> タン</div>
+  <div><span class="label">Kun :</span> みじかい</div>
+  <div class="meaning"><span class="label">Sens primaire :</span> court<br><span class="label">Sens secondaire :</span> bref</div>
+  <div class="examples"><ul><li>短い（みじかい）– court</li><li>短所（たんしょ）– défaut</li><li>短文（たんぶん）– phrase courte</li></ul></div>
+</div>
+
+<!-- 明 -->
+<div class="kanji-card">
+  <div class="kanji-header"><div class="kanji-char">明</div><div class="kanji-level">N4</div></div>
+  <div><span class="label">On :</span> メイ, ミョウ</div>
+  <div><span class="label">Kun :</span> あかるい, あける</div>
+  <div class="meaning"><span class="label">Sens primaire :</span> clair<br><span class="label">Sens secondaire :</span> évident</div>
+  <div class="examples"><ul><li>明るい（あかるい）– lumineux</li><li>説明（せつめい）– explication</li><li>明日（あした）– demain</li></ul></div>
+</div>
+
+<!-- 暗 -->
+<div class="kanji-card">
+  <div class="kanji-header"><div class="kanji-char">暗</div><div class="kanji-level">N4</div></div>
+  <div><span class="label">On :</span> アン</div>
+  <div><span class="label">Kun :</span> くらい</div>
+  <div class="meaning"><span class="label">Sens primaire :</span> sombre<br><span class="label">Sens secondaire :</span> obscur</div>
+  <div class="examples"><ul><li>暗い（くらい）– sombre</li><li>暗記（あんき）– mémorisation</li><li>暗号（あんごう）– code</li></ul></div>
+</div>
+
+<!-- 多 -->
+<div class="kanji-card">
+  <div class="kanji-header"><div class="kanji-char">多</div><div class="kanji-level">N5</div></div>
+  <div><span class="label">On :</span> タ</div>
+  <div><span class="label">Kun :</span> おおい</div>
+  <div class="meaning"><span class="label">Sens primaire :</span> beaucoup<br><span class="label">Sens secondaire :</span> nombreux</div>
+  <div class="examples"><ul><li>多い（おおい）– nombreux</li><li>多少（たしょう）– plus ou moins</li><li>多数（たすう）– majorité</li></ul></div>
+</div>
+
+<!-- 少 -->
+<div class="kanji-card">
+  <div class="kanji-header"><div class="kanji-char">少</div><div class="kanji-level">N5</div></div>
+  <div><span class="label">On :</span> ショウ</div>
+  <div><span class="label">Kun :</span> すくない, すこし</div>
+  <div class="meaning"><span class="label">Sens primaire :</span> peu<br><span class="label">Sens secondaire :</span> un peu</div>
+  <div class="examples"><ul><li>少ない（すくない）– peu</li><li>少し（すこし）– un peu</li><li>少年（しょうねん）– garçon</li></ul></div>
+</div>
+
+<!-- 早 -->
+<div class="kanji-card">
+  <div class="kanji-header"><div class="kanji-char">早</div><div class="kanji-level">N5</div></div>
+  <div><span class="label">On :</span> ソウ</div>
+  <div><span class="label">Kun :</span> はやい</div>
+  <div class="meaning"><span class="label">Sens primaire :</span> tôt<br><span class="label">Sens secondaire :</span> rapide</div>
+  <div class="examples"><ul><li>早い（はやい）– tôt</li><li>早朝（そうちょう）– tôt le matin</li><li>早速（さっそく）– immédiatement</li></ul></div>
+</div>
+
+<!-- 走 -->
+<div class="kanji-card">
+  <div class="kanji-header"><div class="kanji-char">走</div><div class="kanji-level">N5</div></div>
+  <div><span class="label">On :</span> ソウ</div>
+  <div><span class="label">Kun :</span> はしる</div>
+  <div class="meaning"><span class="label">Sens primaire :</span> courir<br><span class="label">Sens secondaire :</span> se déplacer vite</div>
+  <div class="examples"><ul><li>走る（はしる）– courir</li><li>走者（そうしゃ）– coureur</li><li>競走（きょうそう）– course</li></ul></div>
+</div>
+
+<!-- 歩 -->
+<div class="kanji-card">
+  <div class="kanji-header"><div class="kanji-char">歩</div><div class="kanji-level">N5</div></div>
+  <div><span class="label">On :</span> ホ, ブ</div>
+  <div><span class="label">Kun :</span> あるく</div>
+  <div class="meaning"><span class="label">Sens primaire :</span> marcher<br><span class="label">Sens secondaire :</span> progresser</div>
+  <div class="examples"><ul><li>歩く（あるく）– marcher</li><li>散歩（さんぽ）– promenade</li><li>歩道（ほどう）– trottoir</li></ul></div>
+</div>
+
+<!-- 休 -->
+<div class="kanji-card">
+  <div class="kanji-header"><div class="kanji-char">休</div><div class="kanji-level">N5</div></div>
+  <div><span class="label">On :</span> キュウ</div>
+  <div><span class="label">Kun :</span> やすむ</div>
+  <div class="meaning"><span class="label">Sens primaire :</span> se reposer<br><span class="label">Sens secondaire :</span> pause</div>
+  <div class="examples"><ul><li>休む（やすむ）– se reposer</li><li>休日（きゅうじつ）– jour de congé</li><li>休憩（きゅうけい）– pause</li></ul></div>
+</div>
+
+<!-- 体 -->
+<div class="kanji-card">
+  <div class="kanji-header"><div class="kanji-char">体</div><div class="kanji-level">N5</div></div>
+  <div><span class="label">On :</span> タイ</div>
+  <div><span class="label">Kun :</span> からだ</div>
+  <div class="meaning"><span class="label">Sens primaire :</span> corps<br><span class="label">Sens secondaire :</span> forme</div>
+  <div class="examples"><ul><li>体（からだ）– corps</li><li>体重（たいじゅう）– poids</li><li>体育（たいいく）– sport scolaire</li></ul></div>
+</div>
+
+<!-- 力 -->
+<div class="kanji-card">
+  <div class="kanji-header"><div class="kanji-char">力</div><div class="kanji-level">N5</div></div>
+  <div><span class="label">On :</span> リョク, リキ</div>
+  <div><span class="label">Kun :</span> ちから</div>
+  <div class="meaning"><span class="label">Sens primaire :</span> force<br><span class="label">Sens secondaire :</span> capacité</div>
+  <div class="examples"><ul><li>力（ちから）– force</li><li>能力（のうりょく）– capacité</li><li>協力（きょうりょく）– coopération</li></ul></div>
+</div>
+
+<!-- 男 -->
+<div class="kanji-card">
+  <div class="kanji-header"><div class="kanji-char">男</div><div class="kanji-level">N5</div></div>
+  <div><span class="label">On :</span> ダン</div>
+  <div><span class="label">Kun :</span> おとこ</div>
+  <div class="meaning"><span class="label">Sens primaire :</span> homme<br><span class="label">Sens secondaire :</span> masculin</div>
+  <div class="examples"><ul><li>男（おとこ）– homme</li><li>男性（だんせい）– homme (formel)</li><li>長男（ちょうなん）– fils aîné</li></ul></div>
+</div>
+
+<!-- 女 -->
+<div class="kanji-card">
+  <div class="kanji-header"><div class="kanji-char">女</div><div class="kanji-level">N5</div></div>
+  <div><span class="label">On :</span> ジョ</div>
+  <div><span class="label">Kun :</span> おんな</div>
+  <div class="meaning"><span class="label">Sens primaire :</span> femme<br><span class="label">Sens secondaire :</span> féminin</div>
+  <div class="examples"><ul><li>女（おんな）– femme</li><li>女性（じょせい）– femme (formel)</li><li>長女（ちょうじょ）– fille aînée</li></ul></div>
+</div>
+
+<!-- 子 -->
+<div class="kanji-card">
+  <div class="kanji-header"><div class="kanji-char">子</div><div class="kanji-level">N5</div></div>
+  <div><span class="label">On :</span> シ</div>
+  <div><span class="label">Kun :</span> こ</div>
+  <div class="meaning"><span class="label">Sens primaire :</span> enfant<br><span class="label">Sens secondaire :</span> petit</div>
+  <div class="examples"><ul><li>子供（こども）– enfant</li><li>女子（じょし）– fille</li><li>男子（だんし）– garçon</li></ul></div>
+</div>
+
+<!-- 友 -->
+<div class="kanji-card">
+  <div class="kanji-header"><div class="kanji-char">友</div><div class="kanji-level">N5</div></div>
+  <div><span class="label">On :</span> ユウ</div>
+  <div><span class="label">Kun :</span> とも</div>
+  <div class="meaning"><span class="label">Sens primaire :</span> ami<br><span class="label">Sens secondaire :</span> camarade</div>
+  <div class="examples"><ul><li>友達（ともだち）– ami</li><li>友情（ゆうじょう）– amitié</li><li>親友（しんゆう）– meilleur ami</li></ul></div>
+</div>
+
+<!-- 父 -->
+<div class="kanji-card">
+  <div class="kanji-header"><div class="kanji-char">父</div><div class="kanji-level">N5</div></div>
+  <div><span class="label">On :</span> フ</div>
+  <div><span class="label">Kun :</span> ちち</div>
+  <div class="meaning"><span class="label">Sens primaire :</span> père<br><span class="label">Sens secondaire :</span> figure paternelle</div>
+  <div class="examples"><ul><li>父（ちち）– père</li><li>お父さん（おとうさん）– papa</li><li>父親（ちちおや）– père</li></ul></div>
+</div>
+
+<!-- 母 -->
+<div class="kanji-card">
+  <div class="kanji-header"><div class="kanji-char">母</div><div class="kanji-level">N5</div></div>
+  <div><span class="label">On :</span> ボ</div>
+  <div><span class="label">Kun :</span> はは</div>
+  <div class="meaning"><span class="label">Sens primaire :</span> mère<br><span class="label">Sens secondaire :</span> figure maternelle
+
+  </div>
+
+  <div class="footer">
+    Tu peux dupliquer une carte <code>.kanji-card</code> pour ajouter d’autres kanji (JLPT N5 → N1, thèmes, etc.).
+  </div>
+</body>
+</html>
